@@ -1,9 +1,8 @@
-
-import React, { useState } from 'react';
-import { Chatbot } from './components/Chatbot';
+// Chatbot component is loaded globally before this script.
+// React is also global.
 
 const App: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const navLinks = (
     <>
@@ -98,5 +97,3 @@ const App: React.FC = () => {
     </div>
   );
 };
-
-export default App;
