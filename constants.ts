@@ -7,4 +7,4 @@
  * And it should return a JSON response like:
  * { "reply": "AI's response here" }
  */
-export const N8N_WEBHOOK_URL = 'YOUR_N8N_WEBHOOK_URL_HERE';
+const N8N_WEBHOOK_URL = 'YOUR_N8N_WEBHOOK_URL_HERE';
