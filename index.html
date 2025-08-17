@@ -13,7 +13,17 @@
     
     <!-- Add Babel Standalone for in-browser transpilation -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  </head>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
   <body class="bg-gray-50 dark:bg-gray-900">
     <div id="root"></div>
     
@@ -24,5 +34,6 @@
     <script type="text/babel" data-presets="react,typescript" src="./components/Chatbot.tsx"></script>
     <script type="text/babel" data-presets="react,typescript" src="./App.tsx"></script>
     <script type="text/babel" data-presets="react,typescript" src="./index.tsx"></script>
-  </body>
+  <script type="module" src="/index.tsx"></script>
+</body>
 </html>

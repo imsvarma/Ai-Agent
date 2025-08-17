@@ -1,3 +1,7 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { App } from './App';
+
 // App component, React, and ReactDOM are all loaded globally before this script.
 
 const rootElement = document.getElementById('root');

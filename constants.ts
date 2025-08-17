@@ -1,4 +1,3 @@
-
 /**
  * IMPORTANT: Replace this URL with your actual n8n webhook URL.
  * This is the endpoint the chatbot will send messages to.
@@ -7,4 +6,4 @@
  * And it should return a JSON response like:
  * { "reply": "AI's response here" }
  */
-const N8N_WEBHOOK_URL = 'YOUR_N8N_WEBHOOK_URL_HERE';
+export const N8N_WEBHOOK_URL = 'YOUR_N8N_WEBHOOK_URL_HERE';
